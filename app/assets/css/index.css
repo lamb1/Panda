@@ -1,0 +1,350 @@
+/*布局样式*/
+*{
+    margin:0;
+    padding: 0;
+}
+ul{
+     list-style:none;
+ }
+a{
+    text-decoration:none
+}
+
+/*导航*/
+.head{
+    width: 1080px;
+    height: 80px;
+}
+.head ul li{
+    display: inline-block;
+    margin-left: 80px;
+    line-height: 80px;
+}
+.head ul li a{
+    color: #999;
+    font-size: 16px;
+    font-weight: bold;
+}
+.head ul li:first-child{
+    margin-left: 10px;
+}
+.head ul li:last-child{
+    float: right;
+    display: inline;
+    margin-right: 5px;
+}
+
+.head .nav_logo{
+    margin-top: 15px;
+}
+
+/*脚注*/
+.footer_bg{
+    background: #2b2b2b;
+    width: 100%;
+}
+#index_footer{
+    position: absolute;
+    bottom: 0;
+}
+#extra_footer{
+    background-color: #2b2b2b;
+}
+.footer{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.footer li{
+    color:whitesmoke;
+}
+.footer li+li{
+    margin-top: 15px;
+}
+.footer img{
+    margin-right: 10px;
+}
+
+
+/*fullpage css效果*/
+
+
+
+/*百分数是相对于width：1821px；height：889px屏幕*/
+
+/*-----------------满屏效果第一屏------------------*/
+.fullScreen0{
+    background-color: rgb(241,241,241);
+}
+/*总汇图片处理*/
+.fullScreen0_pic1{
+    width: 750px;  /*900px*/
+    margin: 0 auto;
+    position: relative;
+}
+.fullScreen0_pic1 img{
+    width: 26.88%;  /*242px*/
+    height: 49.5%;  /*200px*/
+}
+.fullScreen0_pic1 img:nth-child(4){
+    margin-top: 4px;
+}
+.fullScreen0_pic1 img:nth-child(5){
+    margin-left: 27.33%;  /*246px*/
+    margin-top: 4px;
+}
+/*总汇标题处理*/
+.fullScreen0_tit1{
+    width: 220px;  /*273px*/
+    margin: 10% auto 3.37%;
+}
+.fullScreen0_tit1 img{
+    width: 100%;  /*250px*/
+    margin: 0 auto;
+}
+.topic_p1{
+    font-size: 10px;  /*14px*/
+    color: #333a4a;
+    letter-spacing:2px;
+}
+/*两根黒柱*/
+.column11{
+    width: 8.33%;  /*75px*/
+    height: 37.12%;  /*150px*/
+    background-color: #333a4a;
+    position: absolute;
+    left: 83.33%;  /*750px*/
+    top: 62.87%;  /*254px*/
+}
+.column21{
+    width: 5.55%;  /*50px*/
+    height: 24.75%;  /*100px*/
+    background-color: #333a4a;
+    position: absolute;
+    left: 93.88%;  /*845px*/
+    top: 75.24%;  /*304px*/
+}
+/*课程总汇左右切换按钮*/
+.fp-controlArrow.fp-prev {
+    left: 30px!important;
+    border-color: transparent #cccccc transparent transparent!important;
+}
+.fp-controlArrow.fp-next {
+    right: 30px!important;
+    border-color: transparent transparent transparent #cccccc!important;
+}
+/*-----------------课程总汇第二屏-----------------*/
+.fullScreen0_pic2{
+    width: 750px;  /*900px*/
+    margin: 0 auto;
+    position: relative;
+}
+.fullScreen0_pic2 img{
+    width: 26.88%;  /*242px*/
+    height: 49.5%;  /*200px*/
+}
+.fullScreen0_pic2 img:nth-child(4){
+    margin-top: 4px;
+}
+.fullScreen0_pic2 img:nth-child(1){
+    border: 1px solid #B5B5B5;
+}
+.fullScreen0_pic2 img:nth-child(5){
+    margin-left: 27.33%;  /*246px*/
+    margin-top: 4px;
+}
+/*总汇标题处理*/
+.fullScreen0_tit2{
+    width: 220px;  /*273px*/
+    margin: 10% auto 3.37%;
+}
+.fullScreen0_tit2 img{
+    width: 100%;  /*250px*/
+    margin: 0 auto;
+}
+.topic_p2{
+    font-size: 10px;  /*14px*/
+    color: #333a4a;
+    letter-spacing:2px;
+}
+/*两根黒柱*/
+.column12{
+    width: 8.33%;  /*75px*/
+    height: 37.12%;  /*150px*/
+    background-color: #333a4a;
+    position: absolute;
+    left: 83.33%;  /*750px*/
+    top: 62.87%;  /*254px*/
+}
+.column22{
+    width: 5.55%;  /*50px*/
+    height: 24.75%;  /*100px*/
+    background-color: #333a4a;
+    position: absolute;
+    left: 93.88%;  /*845px*/
+    top: 75.24%;  /*304px*/
+}
+/*------------------第一屏轮播------------*/
+/*左右滑动按钮*/
+.carousel-control{
+    width: 80px;
+    height: 120px;
+    transform: translate(0,230%);
+    text-shadow: none;
+    opacity: 1;
+    color: #000000;
+}
+.carousel-control:hover{
+    background-color: #7e828d;
+}
+.carousel-control.left{
+    background-image: none;
+    left: -80px;
+}
+.carousel-control.right{
+    background-image: none;
+    right: -80px;
+}
+
+/*-----------------满屏效果第2屏------------------*/
+/*背景图*/
+.fullScreen1{
+    background-image: url("../img/bg_02.png.jpg");
+    background-size: 100%,100%;
+}
+/*外边框div*/
+.fullScreen1_Div{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*字体*/
+.fullScreen1_text{
+    margin-top: 17%;
+    position: absolute;
+    top: 10%;
+    left: 45%;
+}
+/*字体颜色*/
+.exam1_p1{
+    color: #3d99a4;
+    font: 30px '微软雅黑';
+}
+.exam1_p1 p:nth-child(1){
+    background-color: red;
+}
+.exam1_p1 span{
+    color: #999999!important;
+    margin-left: 10px;
+}
+.examBtn{
+    width: 192px;
+    height: 58px;
+    font-weight: bolder;
+    font-size: 24px;
+    margin-top: 15px;
+    color: #ffffff;
+}
+.exam1Btn{
+    background: #3d99a4;
+
+}.exam2Btn{
+     background: #1786df;
+ }
+.exam3Btn{
+    background: #328fae;
+}
+.fullScreen1_text{
+    font: 14px '微软雅黑';
+    color: #999999;
+}
+.fullScreen1_text p{
+    margin-bottom: 10px;
+}
+.fullScreen1_text p:nth-child(1){
+    margin-bottom: 24px;
+}
+.fullScreen1_text p:nth-child(2){
+    margin-bottom: 32px;
+}
+/*-----------------满屏效果第3屏------------------*/
+/*背景图*/
+.fullScreen2{
+    background-image: url("../img/bg_03.png.jpg");
+    background-size: 100%,100%;
+}
+/*外边框div*/
+.fullScreen2_Div{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*字体*/
+.fullScreen2_text{
+    margin-top: 17%;
+    font: 14px '微软雅黑';
+    color: #999999;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+}
+.fullScreen2_text p:nth-child(1){
+    margin-bottom: 24px;
+}
+.fullScreen2_text p:nth-child(2){
+    margin-bottom: 32px;
+}
+/*字体颜色*/
+.exam2_p2{
+    color: #1786df;
+    font-weight: 900;
+    font-size: 30px;
+}
+/*字体颜色*/
+.exam2_p2 span{
+    color: #999999!important;
+    margin-left: 10px;
+}
+/*-----------------满屏效果第4屏------------------*/
+/*背景图*/
+.fullScreen3{
+    background-image: url("../img/bg_04.png.png");
+    background-size: 100%,100%;
+    position: relative;
+}
+/*外边框div*/
+.fullScreen3_Div{
+    width: 1080px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+/*字体*/
+.fullScreen3_text{
+    margin-top: 20%;
+    font: 14px '微软雅黑';
+    color: #999999;
+    position: absolute;
+    top: 0%;
+    left: 45%;
+}
+.fullScreen3_text p:nth-child(1){
+    margin-bottom: 24px;
+}
+.fullScreen3_text p:nth-child(2){
+    margin-bottom: 32px;
+}
+/*字体颜色*/
+.exam3_p3{
+    color: #328fae;
+    font-weight: 900;
+    font-size: 30px;
+}
+/*字体颜色*/
+.exam3_p3 span{
+    color: #999999!important;
+    margin-left: 10px;
+}

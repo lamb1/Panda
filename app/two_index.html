@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myapp">
+<head>
+    <meta charset="UTF-8">
+    <title>二级页面</title>
+    <link rel="stylesheet" href="assets/css/index_2.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="assets/jq/two_jq.js"></script>
+    <!--angular-->
+    <script src="lib/angular/angular.min.js"></script>
+    <!--angular路由-->
+    <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
+    <!--模块顺序【1】-->
+    <script src="app.js"></script>
+    <!--路由表-->
+    <script src="router/uiRouter.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+    <script src="server/subject.js"></script>
+    <script src="server/topictype.js"></script>
+    <script src="server/topic.js"></script>
+    <script src="server/item.js"></script>
+    <script src="server/answer.js"></script>
+    <script src="server/recognized.js"></script>
+    <script src="server/space.js"></script>
+    <!--其他控制器-->
+    <script src="controller/indexCtrl.js"></script>
+    <script src="routerController/routerTopicCtrl.js"></script>
+    <script src="routerController/routerLeftCtrl.js"></script>
+    <script src="routerController/routerRightCtrl.js"></script>
+</head>
+<body id="body_background" ng-controller="indexCtrl">
+<nav class="nav_color container">
+    <div class="row">
+        <div class="head">
+            <div class="col-xs-2">
+                <a href="index.html"><img class="nav_logo" src="assets/img/logo.png.png" alt=""></a>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="two_index.html#/topictype/1/1/details">题库</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!--分页科目导航滑动-->
+<div class="qieh1 nav">
+    <div class="qieh1_left qieh1_all">&laquo;</div>
+    <div id="banner">
+        <ul>
+            <li class="qieh1_sub"><a href="{{'#/topictype/'+subjects[0].id+'/1/details'}}"><img src="assets/img/but_09_pre.png.png">{{subjects[0].name}}</a></li>
+            <li class="qieh1_sub"><a href="{{'#/topictype/'+subjects[2].id+'/1/details'}}"><img src="assets/img/but_02_pre.png.png">{{subjects[2].name}}</a></li>
+            <li class="qieh1_sub"><a href="{{'#/topictype/'+subjects[1].id+'/1/details'}}"><img src="assets/img/but_03_pre.png.png">{{subjects[1].name}}</a></li>
+            <li class="qieh1_sub"><a href="{{'#/topictype/'+subjects[3].id+'/1/details'}}"><img src="assets/img/but_04_pre.png.png">{{subjects[3].name}}</a></li>
+            <li class="qieh1_sub"><a href="{{'#/topictype/'+subjects[4].id+'/1/details'}}"><img src="assets/img/but_05_pre.png.png">{{subjects[4].name}}</a></li>
+            <li class="qieh1_sub"><img src="assets/img/but_06_pre.png.png">Mysql</li>
+            <li class="qieh1_sub"><img src="assets/img/but_07_pre.png.png">C++</li>
+            <li class="qieh1_sub"><img src="assets/img/but_10_pre.png.png">Python</li>
+            <li class="qieh1_sub"><img src="assets/img/but_08_pre.png.png">Php</li>
+            <li class="qieh1_sub"><img src="assets/img/but_09_pre.png.png">Javascript</li>
+        </ul>
+    </div>
+    <div class="qieh1_right qieh1_all">&raquo;</div>
+</div>
+
+<!--内容區域-->
+<!--<div class="two_content container" id="two_container">
+    <div class="content_left">
+        <ul>
+            <li>题目类型</li>
+            <li class="left_li menu">单选题</li>
+            <li class="left_li">多选题</li>
+            <li class="left_li">问答题</li>
+            <li class="left_li">判断题</li>
+            <li class="left_li">填空题</li>
+        </ul>
+    </div>
+
+    <div class="content_right ">
+        <div>
+            <span class="menu1">题目</span>
+            <span>答案</span>
+        </div>
+        <div class="right_content">
+            <p>1、下面关于自定义指令的说法错误的是</p>
+            <p>A、现今市场上的前端框架只有angularJs拥有自定义指令功能</p>
+            <p>B、AngularJs是目前唯一提供Web应用可复用能力的框架</p>
+            <p>C、Bootstrap插件环境提供了自定义指令功能</p>
+            <p>D、自定义指令拥有易用、易编写的特点</p>
+            <div class="right_down">
+                <ul>
+                    <li><a href="#">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input type="text"></li>
+                    <li><a href="#">跳转</a></li>
+                    <li><a href="#">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>-->
+<div  class="two_content container" id="two_container" ui-view="" ng-controller="routerTopicCtrl"></div>
+<!--脚注-->
+
+<footer class="footer_bg" id="extra_footer">
+    <div class="row" style="width: 100%">
+        <ul class="col-md-8 col-md-offset-2 footer">
+            <li>电话：020-123456789  地址 ：广州市天河区</li>
+            <li>Copyright @ 2016 来学LikeShare(粤ICP备14076343号)</li>
+            <li><img src="assets/img/logo2_06.png" alt="">Panda题库 版权所有 Panda网络文化信息库</li>
+        </ul>
+    </div>
+</footer>
+</body>
+</html>

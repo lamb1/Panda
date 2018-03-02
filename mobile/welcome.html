@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mobileApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="../public/lib/ionic/release/css/ionic.css"/>
+    <link rel="stylesheet" href="../public/lib/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/welcome.css">
+
+    <!--jquery-->
+    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../public/lib/angular/angular.js"></script>
+    <script src="../public/lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../public/lib/angular-animate/angular-animate.js"></script>
+    <script src="../public/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--ionic-->
+    <script src="../public/lib/ionic/release/js/ionic.js"></script>
+    <script src="../public/lib/ionic/release/js/ionic-angular.js"></script>
+    <!--swiper-->
+    <script src="../public/lib/swiper/dist/js/swiper.jquery.min.js"></script>
+    <!--angular路由-->
+    <script src="app.js"></script>
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+
+    <!--本页需要-->
+    <script src="directive/cszWelcome.js"></script>
+    <script src="server/welcomeServer.js"></script>
+</head>
+<body>
+    <csz-welcome></csz-welcome>
+</body>
+</html>

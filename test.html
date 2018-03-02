@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="app/lib/angular/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+<div ng-app="DemoApp" ng-controller="DemoController">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>ID</td>
+            <td>FirstName</td>
+            <td>LastName</td>
+            <td>Status</td>
+            <td>Address</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="emp in persons">
+            <td>{{emp.ID}}</td>
+            <td>{{emp.FirstName}}</td>
+            <td>{{emp.LastName}}</td>
+            <td>{{emp.Status}}</td>
+            <td>{{emp.Address}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <tm-pagination conf="paginationConf"></tm-pagination>
+</div>
+</body>
+</html>

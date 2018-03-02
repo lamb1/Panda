@@ -1,0 +1,18 @@
+#navbar{
+    position: relative;
+}
+.about_box{
+    width: 1080px;
+    margin: 50px auto 100px;
+    color:#000000;
+    font:18px Microsoft YaHei;
+}
+.about_img1{
+    margin:15px 0;
+}
+.about_p,.about_img2{
+    margin-left: 15px;
+}
+.about_img2 img+img{
+    margin-left: 32px;
+}

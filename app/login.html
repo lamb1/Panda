@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+
+    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/login.css" rel="stylesheet">
+    <link href="assets/css/index.css" rel="stylesheet">
+</head>
+<!--导航条-->
+<nav class="nav_color container navbar-fixed-top" >
+    <div class="row">
+        <div class="head">
+            <div class="col-xs-2">
+                <a href="index.html"><img class="nav_logo" src="assets/img/logo.png.png" alt=""></a>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="two_index.html">题库</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<body class="login_body">
+
+    <div class="container vertical">
+        <div class="row">
+            <div class="col-xs-8 col-xs-offset-2">
+                <div class="panel panel-default panel-div">
+                    <div class="panel-heading text-center">
+                        <h3>Panda题库后台管理系统</h3>
+                    </div>
+                    <div class="panel-body form-group-lg">
+
+                        <!--用户名名称-->
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-user fa-2x my-i"></i>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="请输入用户名名称">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--用户名密码-->
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-8 col-xs-offset-2">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-cog fa-2x my-i"></i>
+                                        </div>
+                                        <input type="password" class="form-control" placeholder="请输入用户密码">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--验证码-->
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-5 col-xs-offset-2">
+                                    <div class="input-group">
+                                        <div class="input-group-addon">
+                                            <i class="fa fa-2x fa-adn my-i"></i>
+                                        </div>
+                                        <input type="text" class="form-control" placeholder="请输入验证码">
+                                    </div>
+                                </div>
+                                <div class="col-xs-3">
+                                    <img src="assets/img/background-0.png" style="height: 46px;width: 100%">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--记住我-->
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-xs-offset-2 col-xs-2">
+                                   <div class="checkbox">
+                                       <label>
+                                           <input type="checkbox">
+                                           记住我
+                                       </label>
+                                   </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--登录按钮-->
+                        <div class="form-group ">
+                            <div class="row">
+                                <div class="input-group col-xs-offset-2 col-xs-8">
+                                    <input id="loginBtn" class="btn btn-primary btn-lg btn-block" type="submit" value="登录">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--脚注-->
+    <div class="container footer_bg navbar-fixed-bottom" id="extra_footer">
+        <div class="row">
+            <ul class="col-md-8 col-md-offset-2 footer">
+                <li>电话：020-123456789  地址 ：广州市天河区</li>
+                <li>Copyright @ 2016 来学LikeShare(粤ICP备14076343号)</li>
+                <li><img src="assets/img/logo2_06.png" alt="">Panda题库 版权所有 Panda网络文化信息库</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

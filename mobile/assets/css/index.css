@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#carousel-example-generic{
+    margin-top: 40px;
+}
+a:hover{
+    text-decoration: none;
+}
+/*脚注*/
+.footer{
+    position: fixed !important;
+}
+
+
+/*轮播*/
+.Picture_carousel {
+    margin-top: 3.3em;
+}
+.swiper-slide img{
+    width: 100%;
+    height: auto;
+}
+
+/*题目类型*/
+.text_type{
+    font-size: 1em;
+    color: #999999;
+
+    margin-left: 1em;;
+    margin-bottom: 0.8em;
+}
+/*题目类型*/
+.subject{
+    margin-bottom: 30px;
+    margin-left: 1%;
+    border-bottom: 1px solid #999999;
+}
+.subject_type{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 43%;
+    background: white;
+}
+
+/*透明度*/
+.transparent_class {
+    filter:alpha(opacity=50);
+    -moz-opacity:0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+}
+
+.content{
+    top: 0;
+    bottom: 0;
+}
+.subject_0{
+    position: relative;
+}
+.subject_1 img{
+    width: 100%;
+}
+.subject_2 img{
+    width: 100%;
+}
+/*科目介绍*/
+.subject_2_p1{
+    font-size: 1EM;
+    margin-top: 1px;
+    margin-left: 10%;
+}
+/*在线人数*/
+.subject_2_p2{
+    font-size:1EM;
+    color: #333333;
+    position: absolute;
+    bottom:10%;
+    left: 3%;
+}
+
+
+
+/*图片轮播*/
+.slides0 img{
+    width: 100%;
+}
+.pink{
+    background-image: url("../img/Content_img_02_png.png");
+    background-size: cover;
+}
+
+

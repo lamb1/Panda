@@ -1,0 +1,16 @@
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" ng-repeat="item in bgs">
+            <img class="swiper-slide_Btn" id="swiper-slide_Btn" src="assets/img/tiaoGuoBtn.png" ng-if="$first">
+            <a href="{{url}}" class="button icon-right ion-chevron-right intoTiKu" ng-if="$last">进入题库&nbsp;</a>
+            <img src="{{imgPath+item.img}}">
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        var mySwiper = new Swiper('.swiper-container', {
+            // autoplay: 5000,//可选选项，自动滑动
+        });
+    });
+</script>1

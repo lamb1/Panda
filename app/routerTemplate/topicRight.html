@@ -1,0 +1,73 @@
+
+    <div>
+        <span class="menu1"><a href="{{'#/topictype/'+subId+'/'+topicId+'/details'}}">题目</a></span>
+        <span><a href="{{'#/topictype/'+subId+'/'+topicId+'/answer'}}">答案</a></span>
+    </div>
+
+<div class="right_content" >
+    <div  ng-repeat="item in topicaaa" >
+        <div ng-if="topicId==1 && topicIndex==$index+1 || topicId==2 && topicIndex==$index+1">
+            <p>{{$index+1+'、'+item.name}}</p>
+            <p  ng-repeat="item1 in item.item">{{ASC($index)+'：'+item1.name}}</p>
+
+            <div class="right_down" ng-controller="routerRightCtrl">
+                <ul>
+                    <li ><a href="" ng-click="prev()" id="the1">上一页</a></li>
+                    <li class="toPage" id="li1"><a href="">{{topicIndex}}</a></li>
+                    <li class="toPage" id="li2"><a href="" ng-click="goPage()">{{topicIndex+1}}</a></li>
+                    <li class="toPage" id="li3"><a href="#">{{topicIndex+2}}</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input type="text" ng-model="goData"></li>
+                    <li><a href="" ng-click="goTo()">跳转</a></li>
+                    <li><a href="" ng-click="next()">下一页</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div ng-if="topicId==3 && topicIndex==$index+1">
+            <p>{{$index+1+'、'+item.name}}</p>
+            <div class="right_down">
+                <ul>
+                    <li><a href="" ng-click="prev()">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input type="text"></li>
+                    <li><a href="#">跳转</a></li>
+                    <li><a href="" ng-click="next()">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div ng-if="topicId==4 && topicIndex==$index+1">
+            <p>{{$index+1+'、'+item.name}}</p>
+            <div class="right_down">
+                <ul>
+                    <li><a href="" ng-click="prev()">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input type="text"></li>
+                    <li><a href="#">跳转</a></li>
+                    <li><a href="" ng-click="next()">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div ng-if="topicId==5 && topicIndex==$index+1">
+            <p>{{$index+1+'、'+item.name}}</p>
+            <div class="right_down">
+                <ul>
+                    <li><a href="" ng-click="prev()">上一页</a></li>
+                    <li><a href="#">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">...</a></li>
+                    <li><input type="text"></li>
+                    <li><a href="#">跳转</a></li>
+                    <li><a href="" ng-click="next()">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

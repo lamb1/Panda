@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href=" ../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/fream.css" rel="stylesheet">
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../lib/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="../assets/js/fream.js"></script>
+</head>
+<body id="bodyFream"  style="min-width: 800px">
+<!--导航-->
+    <nav class="navbar navbar-default navbar-fixed-top xx-nav" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand">
+                    <div class="xx-nav-left">
+                        <span class="glyphicon glyphicon-align-justify" id="silder" onclick="sidebarIconClick()"></span>
+                        后台管理系统
+                    </div>
+                </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a><span id="nowDate"></span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--左侧-->
+    <div class="slider" id="sidebar">
+        <ul class="list-group">
+            <li class="list-group-item"><a href="topicInfo.html"><i class="fa fa-desktop"></i>题型信息显示</a>
+                <span class="label label-warning span-silder">5</span>
+            </li>
+        </ul>
+        <ul>
+            <li class="list-group-item"><a href="subjectInfo.html"><i class="fa fa-book"></i>学科信息显示</a><span class="label label-primary span-silder">6</span></li>
+            <li class="list-group-item"><a href="subjectInfoAdd.html"><i class="fa fa-audio-description"></i>学科信息添加</a></li>
+        </ul>
+        <ul>
+            <li class="list-group-item"><a href="fream4.html"><i class="fa fa-building"></i>题目信息显示<span class="label label-danger span-silder">5555</span></a></li>
+            <li class="list-group-item"><a href="fream6.html"><i class=" fa fa-edit"  ></i>单选题题目信息添加</a></li>
+            <li class="list-group-item"><a href="fream7.html"><i class=" fa fa-edit"  ></i>多选题题目信息添加</a></li>
+            <li class="list-group-item"><a href="fream8.html"><i class=" fa fa-edit"  ></i>问答题题目信息添加</a></li>
+            <li class="list-group-item"><a href="fream9.html"><i class=" fa fa-edit"  ></i>判断题题目信息添加</a></li>
+            <li class="list-group-item"><a href="fream10.html"><i class=" fa fa-edit"  ></i>填空题题目信息添加</a></li>
+        </ul>
+        <ul>
+            <li class="list-group-item"><a href="fream5.html"><i class="fa fa-address-card"></i>管理员密码修改</a></li>
+            <li class="list-group-item"><i class="fa fa-address-book"></i>管理员退出</li>
+        </ul>
+
+    </div>
+    <!--内容-->
+    <div class="content">
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+        <p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p><p>qqqqqqqqqq</p>
+
+        <!--脚注-->
+        <footer class="xx-footer">
+            <div>
+                2016 &copy; Olive Admin by Olive Enterprise.
+            </div>
+        </footer>
+    </div>
+<script>
+    //调用时间函数
+    //页面打开立即执行
+    $('#nowDate').text(getDate());
+    //每一秒钟执行一次
+    window.setInterval(function () {
+        $('#nowDate').text(getDate());
+    }, 1000);
+    //左侧滑动
+/*
+    var i=0;
+    $('#silder').on('click',function () {
+        if(i%2!=0){
+            $('.slider').animate({
+                left:'0px'
+            },500)
+            $('.content').css({
+                'margin-left':'210px'
+            });
+        }else {
+            $('.slider').animate({
+                left:'-210px'
+            },500);
+            $('.content').animate({
+                'margin-left':0
+            });
+        }
+        i++;
+    })
+*/
+
+    function sidebarIconClick() {
+
+        if ($('#sidebar').is(':visible')) {
+            sidebarHidden();
+        }
+        else {
+            $('#sidebar').show();
+            sidebarShow();
+        }
+    }
+
+
+    function sidebarShow() {
+        $('#sidebar').animate({left: '0'}, 200, function () {
+            $('.content').css('margin-left', '210px');
+
+        });
+
+    }
+    function sidebarHidden() {
+        $('#sidebar').animate({left: '-210'}, 200, function () {
+            $('.content').css('margin-left', '0px');
+
+            $('#sidebar').hide();
+        });
+    }
+//    Holder.lazyload({skip_invisible: false});
+
+    //内容区小于屏幕高度，脚注固定在底部
+    if(window.innerHeight-59>=$('.content')[0].scrollHeight){
+        // $('.xx-footer').css({'position':'fixed','width':$('.content')[0].scrollWidth+'px','bottom':0});
+        $('.content').css('height',window.innerHeight-59+'px');
+    }else {
+//        $('.xx-footer').css('top',$('.content')[0].scrollHeight+'px');
+    }
+</script>
+</body>
+</html>

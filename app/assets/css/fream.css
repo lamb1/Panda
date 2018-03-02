@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-color: #ccc;
+}
+a{
+    color: #d8dedd;
+}
+a:hover{
+    text-decoration: none;
+    color: #d8dedd;
+}
+/*导航*/
+.xx-nav{
+    height: 59px;
+    border: 0;
+    background-color: rgb(31,38,46);
+}
+.xx-nav-left,#nowDate{
+    color: #d8dedd;
+    cursor: pointer;
+}
+/*左侧*/
+.slider{
+    width: 210px;
+    background-color:rgb(46,55,64);
+    height: auto;
+    position: fixed;
+    bottom: 0;
+    top:59px;
+}
+.slider ul li{
+    background-color: transparent;
+    border-radius: 0 !important;
+    border: 0;
+    color: #d8dedd;
+}
+.slider ul li:hover{
+    background-color: #79927c;
+    cursor: pointer;
+}
+.slider li i{
+    margin-right: 6px;
+
+}
+.span-silder{
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 60px;
+    height: 30px;
+    line-height: 30px;
+}
+/*右边内容区*/
+.content{
+    position: relative;
+    width: auto;
+    margin-top: 69px;
+    margin-left: 210px;
+}
+.content p{
+    margin-bottom: 0!important;
+}
+/*.form-group>label:nth-child(1){
+    min-width: 130px;
+}*/
+.img-t-128x128{
+    height: 128px;
+    width: 128px;
+}
+.img-t-300x350{
+    height: 350px;
+    width: 300px;
+}
+/*脚注*/
+.xx-footer{
+    position: fixed;
+    right: 0;
+    bottom: 0 !important;
+    z-index: 9999;
+    height: 30px;
+    line-height: 30px;
+    /*padding: 10px 0;*/
+    text-align: center;
+    width: 100%;
+    color: #e5ffd9;
+    background-color:rgb(46,55,64);
+}

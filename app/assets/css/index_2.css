@@ -1,0 +1,143 @@
+#body_background{
+    /*background: url("../img/bg_00.png.png");*/
+    /*background-size: 100% 100%;*/
+    background-color: rgb(241,241,241);
+}
+
+/*二级页内容部分*/
+#two_container{
+    width: 1170px;
+}
+.two_content{
+    margin: 109px 0 217px 0;
+}
+.two_content .content_left{
+    float: left;
+}
+.two_content .content_left li,.two_content .content_left li a{
+    list-style: none;
+    display:block;
+    width: 225px;
+    height: 77px;
+    text-align: center;
+    /*border-bottom: 1px solid white;*/
+    color: #FFFFFF;
+    font: 18px/4.5 'Arial';
+    background: #6E727D;
+    cursor: pointer;
+}
+.content_left li+li{
+    margin-top: 1px;
+}
+.two_content .content_left li:first-child{
+    background: #93969F;
+}
+.two_content .content_left ul{
+    padding-left: 0px;
+}
+.menu{
+    background-color: #6E727D !important;
+    color:black !important;
+}
+.two_content .content_right .menu1{
+    background-color: #6E727D !important;
+}
+.two_content .content_right .menu1 a{
+    color: white !important;
+}
+
+.two_content .content_right{
+    float: left;
+    width: 837px;
+    height: 461px;
+    margin-left: 15px;
+    background: white;
+}
+
+.two_content .content_right>div>div:first-child{
+    width: 837px;
+    background: #999999;
+}
+.two_content .content_right>div>div:first-child a{
+    color: white!important;
+}
+.two_content .content_right span,.two_content .content_right span a{
+    display: inline-block;
+    width: 188px;
+    height: 76px;
+    text-align: center;
+    font: 18px/4.5 '微软雅黑';
+    cursor: pointer;
+}
+
+.two_content .content_right .right_content{
+    box-shadow: 5px 0 30px;
+    padding-top: 78px;
+    width: 837px;
+    min-height: 385px;
+    height: auto;
+}
+.two_content .content_right .right_content p{
+    margin-left: 106px;
+    color: #333A4A;
+    font: 18px "Microsoft YaHei UI";
+}
+.two_content .content_right .right_content p:first-child{
+    margin: 0 0 46px 76px;
+}
+.right_down{
+    width: 400px;
+    list-style: none;
+    margin: 75px auto;
+}
+.right_down li{
+    display: inline-block;
+    margin-left: 17px;
+    color: #999999;
+}
+.right_down li a{
+    color: #B4B5B9;
+}
+.right_down li input{
+    width: 23px;
+    height: 18px;
+}
+/*分页科目导航滑动*/
+.qieh1{
+    width: 850px;
+    margin: 55px auto ;
+}
+/*左右箭头*/
+.qieh1_all{
+    font: 25px Arial;
+    color: #999999;
+    float: left;
+    cursor: pointer;
+}
+/*中间轮播*/
+#banner{
+    width: 820px;
+    margin-top: 6px;
+    overflow: hidden;
+    font: 18px Arial;
+    color: #999999;
+    float: left;
+}
+#banner ul{
+    width: 1700px;
+}
+#banner li{
+    list-style: none;
+    margin-right: 85px;
+    float: left;
+    cursor: pointer;
+}
+#banner li a{
+    color: #999;
+}
+#banner li:first-child{
+    margin-left: 60px;
+}
+#banner li img{
+    margin-right: 6px;
+}

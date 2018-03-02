@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mobileApp">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title>Title</title>
+    <link rel="stylesheet" href="../public/lib/ionic/release/css/ionic.css"/>
+    <link rel="stylesheet" href="../public/lib/swiper/dist/css/swiper.min.css">
+    <!--jquery-->
+    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../public/lib/angular/angular.js"></script>
+    <script src="../public/lib/angular-sanitize/angular-sanitize.js"></script>
+    <script src="../public/lib/angular-animate/angular-animate.js"></script>
+    <script src="../public/lib/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--ionic-->
+    <script src="../public/lib/ionic/release/js/ionic.js"></script>
+    <script src="../public/lib/ionic/release/js/ionic-angular.js"></script>
+    <!--swiper-->
+    <script src="../public/lib/swiper/dist/js/swiper.jquery.min.js"></script>
+
+    <!--angular模块创建-->
+    <script src="app.js"></script>
+    <!--angualr设置config-->
+    <script src="config/config.js"></script>
+
+    <script src="router/uiRouter.js"></script>
+
+    <!--angualr设置run-->
+    <script src="run/run.js"></script>
+    <script src="server/basePath.js"></script>
+
+    <!--本页需要-->
+    <script src="server/navServer.js"></script>
+    <script src="server/hbServer.js"></script>
+    <script src="server/topictypeServer.js"></script>
+    <script src="server/selectServer.js"></script>
+    <script src="controller/navCtrl.js"></script>
+    <script src="controller/subjectCtrl.js"></script>
+    <script src="controller/topictypeCtrl.js"></script>
+    <script src="directive/hideTabs.js"></script>
+
+    <!--所需页面-->
+    <script src="directive/cszIndex.js"></script>
+    <script src="directive/cszFacts.js"></script>
+    <script src="directive/cszIndex2.js"></script>
+
+</head>
+<body>
+
+<ion-nav-bar class="bar-dark nav-title-slide-ios7" align-title="center">
+    <ion-nav-back-button class="button-clear">
+        <i class="ion-arrow-left-c"></i>
+    </ion-nav-back-button>
+</ion-nav-bar>
+<ion-nav-view animation="slide-left-right"></ion-nav-view>
+</body>
+</html>

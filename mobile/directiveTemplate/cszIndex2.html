@@ -1,0 +1,11 @@
+<div class="row row-wrap tabs-icon-top" style="width:auto" ng-controller="subjectCtrl">
+    <div class="col col-33" ng-repeat="item in info">
+
+        <a class="tab-item" ng-click="colClick({{item}})">
+            <img src="{{imgPath+item.img}}">
+            <p class="tab-item">
+                {{item.info}}
+            </p>
+        </a>
+    </div>
+</div>

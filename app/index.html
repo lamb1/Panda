@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Panda题库首页</title>
+    <link rel="stylesheet" href="../public/lib/bootstrap/dist/css/bootstrap.min.css">
+    <script src="../public/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../public/lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/jquery.fullPage.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
+    <script src="assets/jq/indexJQ.js"></script>
+    <script src="assets/js/indexJS.js"></script>
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/jquery.fullpage.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui-min.css">
+</head>
+<body>
+<!--导航条-->
+<nav class="nav_color container navbar-fixed-top" >
+    <div class="row">
+        <div class="head">
+            <div class="col-xs-2">
+                <a href="index.html"><img class="nav_logo" src="assets/img/logo.png.png" alt=""></a>
+            </div>
+            <div class="col-xs-10">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我们</a></li>
+                    <li><a href="two_index.html#/topictype/1/1/details" target="_blank">题库</a></li>
+                    <li><a href="login.html">登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<!--满屏fullpage框架-->
+<div id="fullpage">
+    <!--第一屏-->
+    <div class="section fullScreen0">
+        <!--课程总汇标题轮播-->
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <!--第一屏的第一屏-->
+                <div class="item active">
+                    <div class="fullScreen0_tit1 row">
+                        <img src="assets/img/Image_1.jpg.png">
+                        <p class="topic_p1">Welcome to the Interent test</p>
+                    </div>
+                    <!--课程浏览框(图片)-->
+                    <div class="row fullScreen0_pic1">
+                        <img src="assets/img/but_java_pre.png-拷贝.png">
+                        <img src="assets/img/but_Html_pre.png.png">
+                        <img src="assets/img/but_angular_pre.png.png">
+                        <img src="assets/img/but_spring_nor.png-拷贝.png">
+                        <img src="assets/img/but_bootsrap_pre.png.png">
+                        <div class="column11"></div>
+                        <div class="column21"></div>
+                    </div>
+                </div>
+                <!--第一屏的第二屏-->
+                <div class="item">
+                    <div class="fullScreen0_tit2 row">
+                        <img src="assets/img/Image_1.jpg.png">
+                        <p class="topic_p2">Welcome to the Interent test</p>
+                    </div>
+                    <!--课程浏览框(图片)-->
+                    <div class="row fullScreen0_pic2">
+                        <img src="assets/img/but_C++_nor.png-.png">
+                        <img src="assets/img/but_PHP_nor.png-.png">
+                        <img src="assets/img/but_Python_nor.png.png">
+                        <img src="assets/img/but_javascript_nor.png-.png">
+                        <img src="assets/img/but_mysql_nor.png-.png">
+                        <div class="column12"></div>
+                        <div class="column22"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+    <!--第二屏-->
+    <div class="section fullScreen1" id="fullScreen1">
+        <div class=" fullScreen1_Div">
+            <div class=" fullScreen1_text">
+                <p class="exam1_p1">Java</p>
+                <p class="exam1_p1">全心培养人才<span>全新教育模式</span></p>
+                <p>权威的  专家团队，师资队伍，针对市场和企业缺口进行职业教育课</p>
+                <p>程的研发，培养社会紧缺型人才</p>
+                <p>一直被模仿，从未被超越，十五年华南理工校区，品质久经考验</p>
+                <a href="two_index.html#/topictype/1/1/details" target="_blank">
+                    <input type="button" class="examBtn exam1Btn" value="进入题库">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--第三屏-->
+    <div class="section fullScreen2">
+        <div class=" fullScreen2_Div">
+            <div class=" fullScreen2_text">
+                <p class="exam2_p2">Html</p>
+                <p class="exam2_p2">前沿技术<span>开发利器</span></p>
+                <p>源于36个城市、5362家IT企业真实需求</p>
+                <p>独立研发团队，深入市场调研，瞄准岗位需求，多方认证，严谨课</p>
+                <p>程研发，每18个月更新一次，课程技术点与时俱进 </p>
+                <a href="two_index.html#/topictype/3/1/details" target="_blank">
+                    <input type="button" class="examBtn exam2Btn" value="进入题库">
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--第四屏-->
+
+    <div class="section fullScreen3">
+        <div class=" fullScreen3_Div">
+            <div class=" fullScreen3_text">
+                <p class="exam3_p3">Angular</p>
+                <p class="exam3_p3">国外教学模式<span>激发潜能</span></p>
+                <p>4W1H学习法，目标教学法，云平台线上线下创新教学，激发学员</p>
+                <p>潜力，挡板式教学设计，稳扎稳打学技术，仿真项目实战，毕业即</p>
+                <p>有1-2年工作经验 </p>
+                <a href="two_index.html#/topictype/2/1/details" target="_blank">
+                    <input type="button" class="examBtn exam3Btn" value="进入题库">
+                </a>
+            </div>
+        </div>
+        <!--脚注-->
+        <footer class="container footer_bg" id="index_footer">
+            <div class="row">
+                <ul class="col-md-8 col-md-offset-2 footer">
+                    <li>电话：020-123456789  地址 ：广州市天河区</li>
+                    <li>Copyright @ 2016 来学LikeShare(粤ICP备14076343号)</li>
+                    <li><img src="assets/img/logo2_06.png" alt="">Panda题库 版权所有 Panda网络文化信息库</li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

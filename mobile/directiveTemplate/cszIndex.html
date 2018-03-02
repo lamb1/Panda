@@ -1,0 +1,65 @@
+<div class="swiper-container Picture_carousel">
+    <div class="swiper-wrapper"> <!--Picture_carousel_img-->
+        <div class="swiper-slide "><img src="assets/img/Banner_img_01_png.png" alt="..."></div>
+        <div class="swiper-slide"><img src="assets/img/Banner_img_01_png.png" alt="..."></div>
+        <div class="swiper-slide"><img src="assets/img/Banner_img_01_png.png" alt="..."></div>
+    </div>
+    <div class="swiper-pagination"></div>
+</div>
+
+<!--题型选择-->
+<div class="row text_type">
+    题型选择
+</div>
+
+<!--题目类型-->
+<div class="row subject">
+    <div class="col" ng-repeat="item in info" ng-controller="topictypeCtrl">
+        <a class="tab-item" href="{{url}}" ng-click="ColClick({{item.id}})">
+            <img src="{{imgPath+item.img}}">
+            <p>{{item.info}}</p>
+        </a>
+    </div>
+
+</div>
+
+<!--科目介绍-->
+<div class="row text_type">科目介绍</div>
+
+<!--科目-->
+<div class="row subject_0">
+    <div class="col col-50 subject_1">
+        <img src="assets/img/Content_img_01_png.png">
+        <div class=" subject_type transparent_class">
+            <p class="subject_2_p1">JQuery 构造方法</p>
+            <p class="subject_2_p2">在线人数：750</p>
+        </div>
+    </div>
+
+    <div class="col col-50 subject_2">
+        <img src="assets/img/Content_img_02_png.png">
+        <div class=" subject_type transparent_class">
+            <p class="subject_2_p1"> Html开发利器</p>
+            <p class="subject_2_p2">在线人数：1334</p>
+        </div>
+    </div>
+</div>
+
+<div class="row subject_0">
+    <div class="col col-50 subject_1">
+        <img src="assets/img/Content_img_01_png.png">
+        <div class=" subject_type transparent_class">
+            <p class="subject_2_p1">JQuery 构造方法</p>
+            <p class="subject_2_p2">在线人数：750</p>
+        </div>
+    </div>
+
+    <div class="col col-50 subject_2">
+        <img src="assets/img/Content_img_02_png.png">
+        <div class=" subject_type transparent_class">
+            <p class="subject_2_p1"> Html开发利器</p>
+            <p class="subject_2_p2">在线人数：1334</p>
+        </div>
+
+    </div>
+</div>

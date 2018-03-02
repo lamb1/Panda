@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link href="../lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href=" ../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="../assets/css/fream.css" rel="stylesheet">
+
+    <script src="../lib/jquery/dist/jquery.min.js"></script>
+    <script src="../lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../lib/angular/angular.min.js"></script>
+    <script src="../lib/jquery.scrollTo/jquery.scrollTo.min.js"></script>
+    <script src="../lib/jquery_lazyload-master/jquery.lazyload.js"></script>
+    <script src="../lib/holderjs/holder.js"></script>
+    <script src="../assets/js/fream.js"></script>
+    <script src="../assets/js/action.js"></script>
+</head>
+<body id="bodyFream" style="min-width: 800px">
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top xx-nav" role="navigation">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand">
+                <div class="xx-nav-left">
+                    <span class="glyphicon glyphicon-align-justify" id="silder"></span>
+                    后台管理系统
+                </div>
+            </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a><span id="nowDate"></span></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--左侧-->
+<div class="slider" id="sidebar">
+    <ul class="list-group">
+        <li class="list-group-item"><a href="topicInfo.html"><i class="fa fa-desktop"></i>题型信息显示</a>
+            <span class="label label-warning span-silder">5</span>
+        </li>
+    </ul>
+    <ul>
+        <li class="list-group-item"><a href="subjectInfo.html"><i class="fa fa-book"></i>学科信息显示</a><span class="label label-primary span-silder">6</span></li>
+        <li class="list-group-item"><a href="subjectInfoAdd.html"><i class="fa fa-audio-description"></i>学科信息添加</a></li>
+    </ul>
+    <ul>
+        <li class="list-group-item"><a href="fream4.html"><i class="fa fa-building"></i>题目信息显示<span class="label label-danger span-silder">5555</span></a></li>
+        <li class="list-group-item"><a href="fream6.html"><i class=" fa fa-edit"  ></i>单选题题目信息添加</a></li>
+        <li class="list-group-item"><a href="fream7.html"><i class=" fa fa-edit"  ></i>多选题题目信息添加</a></li>
+        <li class="list-group-item"><a href="fream8.html"><i class=" fa fa-edit"  ></i>问答题题目信息添加</a></li>
+        <li class="list-group-item"><a href="fream9.html"><i class=" fa fa-edit"  ></i>判断题题目信息添加</a></li>
+        <li class="list-group-item"><a href="fream10.html"><i class=" fa fa-edit"  ></i>填空题题目信息添加</a></li>
+    </ul>
+    <ul>
+        <li class="list-group-item"><a href="fream5.html"><i class="fa fa-address-card"></i>管理员密码修改</a></li>
+        <li class="list-group-item"><i class="fa fa-address-book"></i>管理员退出</li>
+    </ul>
+
+</div>
+<!--内容-->
+<div class="content">
+    <div class="container-fluid ">
+        <div class="panel panel-default">
+            <div class="panel-heading"><span class="label label-primary">学科信息添加</span></div>
+            <div class="panel-body">
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科名称</label>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科描述</label>
+                        <div class="col-xs-4">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科图标上传</label>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="file">
+                        </div>
+                        <label class="col-xs-6">点击选择文件</label>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科图标显示</label>
+                        <div class="col-xs-4">
+                            <img class="lazy img-t-128x128" data-original="../assets/img/10.jpg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科宣传图上传</label>
+                        <div class="col-xs-4">
+                            <input class="form-control" type="file">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-xs-2 text-right">学科宣传图显示</label>
+                        <div class="col-xs-4">
+                            <img class="lazy img-t-300x350" data-original="../assets/img/10.jpg">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-xs-2 text-right">
+                            <button class="btn btn-info">添加</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--脚注-->
+    <footer class="xx-footer">
+        <div>
+            2016 &copy; Olive Admin by Olive Enterprise.
+        </div>
+    </footer>
+</div>
+</body>
+</html>
+<script>
+    $(function () {
+        function imgLayz() {
+            $("img.lazy").lazyload(
+                    {
+                        //container: $('.product-list'),   // 对指定标签对象内的图片实现效果，表示在此标签中滚动时，触发加载（注意：如果容器未设置height和overfload:auto，那么会默认加载所有图片）
+                        threshold: 100,                    //当图片顶部距离显示区域还有100像素时，就开始加载
+                        placeholder: "../assets/img/grey.gif",      // 图片未加载时，占位
+                        effect: "slideDown",               // 图片出现的效果，值有show(直接显示),fadeIn(淡入),slideDown(下拉)
+                        effect_speed: 500,                // 效果出现的时间
+                        event: 'scroll',                   // 滚动滚轮时触发，可以是：click、mouseover等
+                        data_attribute: 'original',        // img标签中保存url的自定义属性，默认：data-original
+                        skip_invisible: true,              // 是否跳过已经隐藏的图片（display:none）
+                        failure_limit: 2,                  // 由于延迟加载是根据Dom从上到下执行
+                                                           // 如果遇到Dom位置在上，但是图片定位在下导致看不到，那么会以为之后的图片不在应用延迟加载
+                                                           // 此处的failure_limit用于限制如果出现N个【Dom位置在上，但是图片定位在下】才终止
+                        appear: function () {
+
+                        },
+                        load: function (e) {
+//                        图片加载完毕的回调
+//                        e参数为当前加载的图片下标【从最后一个开始加载，0为最后一个】
+
+                        }
+
+                    }
+            );
+        }
+        imgLayz()
+    })
+</script>

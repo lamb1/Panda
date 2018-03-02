@@ -1,0 +1,24 @@
+.login_body{
+    background: url("../img/background-0.png") no-repeat fixed;
+    background-size: cover;
+}
+.text-center{
+    box-shadow: 0px 1px #b0adad;
+}
+.vertical{
+    transform: translate(0,40%);
+}
+.panel-div{
+    width: 718px;
+}
+.my-i{
+    width: 24px;
+    height: 28px;
+}
+#loginBtn{
+    box-shadow: 0 1px #b1aeae;
+    background-color: #e5e5e5;
+    border: none;
+    color: #000000;
+    letter-spacing:20px;
+}
